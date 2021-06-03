@@ -23,7 +23,7 @@ console.log(namesOfArray);
 
 // // 3. Go through the array and check each individual URL property - if the URL starts with "http", print the URL. Otherwise, print "Invalid URL for" and the value of the name property.
 
-const byURL = arr.filter((obj) => {
+const byURL = arr.forEach((obj) => {
   !obj.URL.startsWith("https")
       ? console.log(obj.URL)
       : console.log(`Invalid URL for ${obj.name}`);
